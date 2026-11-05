@@ -1,4 +1,4 @@
-/* やさしいデザイン塾 / Logical Design Lab
+/* やさしいデザイン塾
    グレー調・角のあるゴシック・控えめな動き。スマホ優先。 */
 
 :root {
@@ -57,11 +57,7 @@ ul { padding: 0; list-style: none; }
   gap: 16px; min-height: 52px;
 }
 .site-name {
-  font-size: 13px; font-weight: 700; text-decoration: none; line-height: 1.4;
-}
-.site-name small {
-  display: block; font-family: var(--font-mono); font-weight: 400;
-  font-size: 11px; color: var(--ink-3); letter-spacing: 0.08em;
+  font-size: 15px; font-weight: 700; text-decoration: none; line-height: 1.4; letter-spacing: 0.04em;
 }
 .site-nav { display: flex; gap: 20px; font-size: 14px; }
 .site-nav a { text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
@@ -182,8 +178,8 @@ ul { padding: 0; list-style: none; }
 /* ---------- トップ・一覧 ---------- */
 .home-hero { padding: 72px 0 0; }
 .home-hero .eyebrow { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); letter-spacing: 0.14em; text-transform: uppercase; }
-.home-hero h1 { margin-top: 12px; font-size: clamp(34px, 9vw, 60px); line-height: 1.2; font-weight: 700; letter-spacing: 0.02em; }
-.home-hero h1 span { display: block; font-family: var(--font-mono); font-size: 0.42em; font-weight: 400; color: var(--ink-3); letter-spacing: 0.08em; margin-top: 10px; }
+.home-hero h1 { margin-top: 0; font-size: clamp(34px, 9vw, 60px); line-height: 1.2; font-weight: 700; letter-spacing: 0.02em; }
+
 .home-hero p { margin-top: 24px; max-width: 34em; color: var(--ink-2); }
 
 .book-list { display: grid; gap: 18px; margin-top: 28px; }
