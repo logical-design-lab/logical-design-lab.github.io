@@ -19,3 +19,23 @@
 
   items.forEach(function (el) { observer.observe(el); });
 })();
+
+// 試し読み画像のタップ拡大。
+(function () {
+  var box = document.getElementById('lightbox');
+  var list = document.querySelector('[data-samples]');
+  if (!box || !list) return;
+  var img = box.querySelector('img');
+  var cap = box.querySelector('.lightbox-cap');
+  function close() { box.hidden = true; }
+  list.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-full]');
+    if (!btn) return;
+    img.src = btn.getAttribute('data-full');
+    img.alt = btn.getAttribute('data-caption') || '';
+    cap.textContent = btn.getAttribute('data-caption') || '';
+    box.hidden = false;
+  });
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();

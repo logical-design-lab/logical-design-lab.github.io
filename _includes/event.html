@@ -1,0 +1,28 @@
+{% assign ev = site.data.event %}
+<section class="section reveal" id="info" aria-labelledby="info-title">
+  <div class="wrap">
+    <h2 class="section-title" id="info-title">頒布情報 <span class="en">Distribution</span></h2>
+    <p class="section-lead">{{ ev.name }}で頒布します。会場とオンラインの両方で、紙の冊子と電子版（PDF）を用意しています。</p>
+    <dl class="info">
+      <div class="info-row">
+        <dt>Online</dt>
+        <dd>{{ ev.online_period }}<small>{{ ev.online_note }}</small></dd>
+      </div>
+      <div class="info-row">
+        <dt>Offline</dt>
+        <dd>{{ ev.offline_date }}<small>{{ ev.offline_note }}</small></dd>
+      </div>
+      <div class="info-row">
+        <dt>Space</dt>
+        <dd>{{ ev.space }}{% if ev.space_note != "" %}<small>{{ ev.space_note }}</small>{% endif %}</dd>
+      </div>
+    </dl>
+    {% if ev.map_image != "" %}
+    <h3 class="subhead">会場での頒布場所</h3>
+    <figure class="map">
+      <div class="map-view"><img src="/assets/img/{{ ev.map_image }}" alt="{{ ev.map_alt }}" loading="lazy"></div>
+      <a href="/assets/img/{{ ev.map_image }}" target="_blank" rel="noopener">地図を拡大</a>
+    </figure>
+    {% endif %}
+  </div>
+</section>

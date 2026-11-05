@@ -1,0 +1,7 @@
+title: やさしいデザイン塾
+url: https://logical-design-lab.github.io
+lang: ja
+exclude:
+  - README.md
+  - docs
+  - tools
