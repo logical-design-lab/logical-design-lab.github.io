@@ -10,7 +10,7 @@
   --line: #c6c9cd;
   --dark: #222529;
   --band: #dcdedd;
-  --accent: #2c5d96;
+  --accent: #7d5f00;
   --accent-ink: #ffffff;
 
   --font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
@@ -104,7 +104,7 @@ ul { padding: 0; list-style: none; }
 .hero-grid { display: grid; gap: 40px; }
 .cover {
   width: min(72%, 320px); margin: 0 auto;
-  aspect-ratio: 5 / 7; background: var(--surface);
+  aspect-ratio: 1260 / 1789; background: var(--surface);
   border: 2px solid var(--dark); box-shadow: var(--shadow);
   position: relative; overflow: hidden;
 }
@@ -116,7 +116,7 @@ ul { padding: 0; list-style: none; }
 }
 .book-title { font-size: clamp(30px, 8vw, 48px); line-height: 1.25; font-weight: 700; letter-spacing: 0.02em; }
 .book-sub { margin-top: 14px; font-family: var(--font-mono); font-size: 13px; color: var(--ink-3); line-height: 1.7; }
-.book-sub strong { display: block; text-wrap: balance; font-family: var(--font-sans); font-size: 16px; color: var(--ink-2); font-weight: 500; }
+.book-sub strong { display: block; font-family: var(--font-sans); font-size: 16px; color: var(--ink-2); font-weight: 500; }
 .book-lead { margin-top: 20px; color: var(--ink-2); }
 .hero .btn { margin-top: 28px; }
 
@@ -190,7 +190,7 @@ ul { padding: 0; list-style: none; }
   text-decoration: none; transition: transform .18s ease, box-shadow .18s ease;
 }
 .book-item:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--dark); }
-.book-item .thumb { aspect-ratio: 5 / 7; border: 1.5px solid var(--dark); background: var(--band); overflow: hidden; }
+.book-item .thumb { aspect-ratio: 1260 / 1789; border: 1.5px solid var(--dark); background: var(--band); overflow: hidden; }
 .book-item .thumb img { width: 100%; height: 100%; object-fit: cover; }
 .book-item h3 { font-size: 18px; line-height: 1.5; }
 .book-item .meta { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); letter-spacing: 0.06em; margin-bottom: 4px; }
@@ -252,3 +252,5 @@ ul { padding: 0; list-style: none; }
 }
 .toc .no { font-family: var(--font-mono); font-size: 13px; color: var(--accent); letter-spacing: 0.1em; }
 .toc .ttl { font-weight: 700; font-size: 17px; }
+
+.nb { display: inline-block; }
