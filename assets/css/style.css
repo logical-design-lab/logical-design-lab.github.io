@@ -116,7 +116,7 @@ ul { padding: 0; list-style: none; }
 }
 .book-title { font-size: clamp(30px, 8vw, 48px); line-height: 1.25; font-weight: 700; letter-spacing: 0.02em; }
 .book-sub { margin-top: 14px; font-family: var(--font-mono); font-size: 13px; color: var(--ink-3); line-height: 1.7; }
-.book-sub strong { display: block; font-family: var(--font-sans); font-size: 16px; color: var(--ink-2); font-weight: 500; }
+.book-sub strong { display: block; text-wrap: balance; font-family: var(--font-sans); font-size: 16px; color: var(--ink-2); font-weight: 500; }
 .book-lead { margin-top: 20px; color: var(--ink-2); }
 .hero .btn { margin-top: 28px; }
 
@@ -238,3 +238,17 @@ ul { padding: 0; list-style: none; }
   .book-item { grid-template-columns: 120px 1fr; padding: 22px; }
   .site-footer { margin-top: 120px; }
 }
+
+/* ---------- 書名の系列表示・目次 ---------- */
+.book-title .series {
+  display: block; margin-bottom: 6px;
+  font-family: var(--font-mono); font-size: 14px; font-weight: 500;
+  color: var(--ink-3); letter-spacing: 0.08em;
+}
+.toc { margin: 24px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); background: var(--surface); }
+.toc li {
+  display: flex; align-items: baseline; gap: 16px;
+  padding: 16px 18px; border-bottom: 1px solid var(--line);
+}
+.toc .no { font-family: var(--font-mono); font-size: 13px; color: var(--accent); letter-spacing: 0.1em; }
+.toc .ttl { font-weight: 700; font-size: 17px; }
