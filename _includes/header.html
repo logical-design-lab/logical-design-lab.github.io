@@ -1,0 +1,9 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="/">やさしいデザイン塾</a>
+    <nav class="site-nav" aria-label="サイト内メニュー">
+      <a href="/books/"{% if page.nav == "books" %} aria-current="page"{% endif %}>同人誌</a>
+      <a href="/mentoring/"{% if page.nav == "mentoring" %} aria-current="page"{% endif %}>メンタリング</a>
+    </nav>
+  </div>
+</header>

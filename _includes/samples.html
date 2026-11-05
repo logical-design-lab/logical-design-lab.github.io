@@ -1,0 +1,18 @@
+{% if book.samples.size > 0 %}
+<section class="section reveal" aria-labelledby="samples-title">
+  <div class="wrap">
+    <h2 class="section-title" id="samples-title">試し読み <span class="en">Sample</span></h2>
+    <p class="section-lead">中面の一部をご覧いただけます。横にスライドして、タップで拡大できます。</p>
+    <ul class="samples" data-samples>
+      {% for s in book.samples %}
+      <li><button type="button" data-full="{{ s.src }}" data-caption="{{ s.caption }}"><img src="{{ s.src }}" alt="{{ book.series }}　{{ s.caption }}" loading="lazy"><span>{{ s.caption }}</span></button></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox-close" aria-label="閉じる">×</button>
+  <img alt="">
+  <p class="lightbox-cap"></p>
+</div>
+{% endif %}

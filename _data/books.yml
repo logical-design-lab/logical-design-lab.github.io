@@ -1,0 +1,19 @@
+# 『デザインの技術書』シリーズの一覧（トップ・同人誌一覧・各書籍ページで共通利用）
+# 新しい巻は先頭に追加します。
+- id: vol7
+  url: /books/vol7/
+  series: デザインの技術書 Vol.7
+  subtitle: AIとの共創
+  title: デザインの技術書 Vol.7 AIとの共創
+  label: 技術書典21 新刊
+  summary: AI時代に必要なのは「基礎の思考力」と「判断のロジック」。
+  cover: /assets/img/cover-sm.webp
+  booth: https://yasasii-design.booth.pm/items/8981785
+  spec:
+    size: A4・40ページ・フルカラー
+    format: 紙（冊子版）／電子（PDF）
+    published: 2026年11月（初版）
+  # 試し読み画像（assets/img/samples/ に置いたファイルを追加）。空なら試し読み欄は表示されません。
+  # 例:
+  #   - { src: /assets/img/samples/vol7-01.webp, caption: まえがき }
+  samples: []

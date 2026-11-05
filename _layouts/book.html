@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% assign book = site.data.books | where: "id", page.book | first %}
+{{ content }}
+{% include samples.html %}
+{% include event.html %}
+{% include book-info.html %}
+{% include buy.html %}

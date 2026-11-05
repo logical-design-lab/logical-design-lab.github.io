@@ -1,0 +1,14 @@
+<ul class="book-list">
+  {% for b in site.data.books %}
+  <li>
+    <a class="book-item" href="{{ b.url }}">
+      <div class="thumb"><img src="{{ b.cover }}" alt="" width="360" height="511"></div>
+      <div>
+        <div class="meta">{{ b.label }}</div>
+        <h3>{{ b.title }}</h3>
+        <p>{{ b.summary }}</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
