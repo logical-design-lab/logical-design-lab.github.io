@@ -143,7 +143,7 @@ ul { padding: 0; list-style: none; }
 }
 .author .name { font-weight: 700; }
 .author .role { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); letter-spacing: 0.06em; }
-.author .note { grid-column: 1 / -1; font-size: 13px; color: var(--ink-2); line-height: 1.7; }
+.author .note { grid-column: 1 / -1; font-size: 14px; color: var(--ink-2); line-height: 1.7; }
 
 /* ---------- 頒布情報 ---------- */
 .info { margin-top: 24px; border-top: 1px solid var(--ink); background: var(--surface); }
